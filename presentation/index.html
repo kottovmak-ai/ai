@@ -3,150 +3,201 @@
 <head>
 <meta charset="utf-8">
 <title>Сословно-представительная монархия</title>
-<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/500.css">
-<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/600.css">
-<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/500-italic.css">
-<link rel="stylesheet" href="node_modules/@fontsource/cormorant-garamond/600-italic.css">
+<link rel="stylesheet" href="node_modules/@fontsource/playfair-display/700.css">
+<link rel="stylesheet" href="node_modules/@fontsource/playfair-display/800.css">
+<link rel="stylesheet" href="node_modules/@fontsource/playfair-display/700-italic.css">
+<link rel="stylesheet" href="node_modules/@fontsource/playfair-display/800-italic.css">
 <link rel="stylesheet" href="node_modules/@fontsource/unbounded/400.css">
 <link rel="stylesheet" href="node_modules/@fontsource/unbounded/700.css">
 <link rel="stylesheet" href="node_modules/@fontsource/manrope/400.css">
 <link rel="stylesheet" href="node_modules/@fontsource/manrope/500.css">
 <link rel="stylesheet" href="node_modules/@fontsource/manrope/700.css">
+<link rel="stylesheet" href="node_modules/@fontsource/caveat/700.css">
 <link rel="stylesheet" href="style.css">
-<script type="importmap">
-{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}
-</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="arr" viewBox="0 0 120 70"><path d="M6 12 C 40 2, 86 14, 108 54" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M90 50 L109 57 L112 36" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
 
 <!-- 1 -->
-<section class="slide" id="s1">
-  <canvas class="gl"></canvas>
+<section class="slide left" id="s1">
+  <img class="bg" src="renders/s1.png">
   <div class="kicker" style="left:120px;top:110px">История России · XVI–XVII века</div>
-  <h1 class="hero" style="left:112px;top:220px;font-size:132px">Сословно-<br>представительная<br><em>монархия</em></h1>
-  <p class="lead" style="left:120px;top:740px;width:820px">Что это такое — и почему она не закрепилась в&nbsp;России</p>
-  <div class="years x3d" style="left:120px;top:905px">1549 — 1653</div>
+  <h1 class="hero" style="left:114px;top:205px">Сословно-<br>представительная<br><em>монархия</em></h1>
+  <p class="lead" style="left:120px;top:640px;width:640px">Что это такое — и почему она не&nbsp;закрепилась в&nbsp;России</p>
+  <div class="years" style="left:120px;top:880px"><b>1549</b><span></span><b>1653</b></div>
+  <div class="note" style="left:700px;top:905px;--r:-5deg">осторожно, спойлер:<br>царь победит</div>
 </section>
 
 <!-- 2 -->
-<section class="slide" id="s2">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:110px">01 · Понятие</div>
-  <h2 class="title" style="left:116px;top:170px">Что это такое</h2>
-  <p class="quote" style="left:120px;top:350px;width:1080px">Форма правления, при которой власть монарха опирается на&nbsp;<em>собрание представителей сословий</em>&nbsp;— и&nbsp;важнейшие решения принимаются вместе с&nbsp;ним.</p>
-  <div class="facts" style="left:120px;top:760px;width:1120px">
-    <div><b>Монарх</b><span>глава государства, созывает собрание</span></div>
-    <div><b>Сословия</b><span>духовенство, знать, служилые люди, горожане</span></div>
-    <div><b>Собрание</b><span>парламент, штаты, кортесы, сейм, земский собор</span></div>
-  </div>
+<section class="slide left" id="s2">
+  <img class="bg" src="renders/s2.png">
+  <div class="kicker" style="left:120px;top:100px">01 · Понятие</div>
+  <h2 class="title" style="left:116px;top:150px">Что это такое</h2>
+  <p class="quote" style="left:120px;top:300px;width:900px">Форма правления, при которой монарх правит, опираясь на&nbsp;<em>собрание представителей сословий</em>.</p>
+  <ul class="facts" style="left:120px;top:640px;width:470px">
+    <li><b>Монарх</b>глава государства, созывает собрание</li>
+    <li><b>Сословия</b>духовенство, знать, служилые люди, горожане</li>
+    <li><b>Собрание</b>парламент, штаты, кортесы, сейм, земский собор</li>
+  </ul>
+  <div class="note" style="left:1400px;top:92px;--r:4deg">«Очень приятно,<br>царь!»<svg class="arr" style="left:-120px;top:52px;transform:scaleX(-1) rotate(-12deg)"><use href="#arr"/></svg></div>
 </section>
 
 <!-- 3 -->
-<section class="slide" id="s3">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:110px">02 · Признаки</div>
-  <h2 class="title" style="left:116px;top:170px">Четыре признака</h2>
-  <div class="cards4">
-    <div class="card" style="--ry:14deg"><i>01</i><h3>Монарх + собрание</h3><p>Власть государя сочетается с&nbsp;органом, где заседают представители сословий.</p></div>
-    <div class="card" style="--ry:5deg"><i>02</i><h3>Сословный принцип</h3><p>Депутаты представляют не&nbsp;народ в&nbsp;целом, а&nbsp;свою группу: духовенство, знать, горожан.</p></div>
-    <div class="card" style="--ry:-5deg"><i>03</i><h3>Главные вопросы</h3><p>Налоги, война и&nbsp;мир, законы, избрание или утверждение монарха.</p></div>
-    <div class="card" style="--ry:-14deg"><i>04</i><h3>Переходный этап</h3><p>Между раздробленностью и&nbsp;абсолютизмом: монарху ещё нужна поддержка «всей земли».</p></div>
+<section class="slide left" id="s3">
+  <img class="bg" src="renders/s3.png">
+  <div class="kicker" style="left:120px;top:100px">02 · Признаки</div>
+  <h2 class="title" style="left:116px;top:150px">Четыре признака</h2>
+  <div class="grid g4">
+    <div class="card"><i>01</i><h3>Монарх + собрание</h3><p>Власть государя сочетается с&nbsp;органом, где заседают представители сословий.</p></div>
+    <div class="card"><i>02</i><h3>Сословный принцип</h3><p>Депутаты представляют не&nbsp;народ в&nbsp;целом, а&nbsp;свою группу: духовенство, знать, горожан.</p></div>
+    <div class="card"><i>03</i><h3>Главные вопросы</h3><p>Налоги, война и&nbsp;мир, законы, избрание или утверждение монарха.</p></div>
+    <div class="card"><i>04</i><h3>Переходный этап</h3><p>Между раздробленностью и&nbsp;абсолютизмом: монарху ещё нужна поддержка «всей земли».</p></div>
   </div>
+  <div class="note" style="left:1325px;top:300px;--r:-4deg;width:300px">«Мне нужен<br>ваш совет»<small>= мне нужны ваши налоги</small></div>
 </section>
 
 <!-- 4 -->
-<section class="slide" id="s4">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:110px">03 · Контекст</div>
-  <h2 class="title" style="left:116px;top:170px">Общеевропейское явление</h2>
+<section class="slide top" id="s4">
+  <img class="bg" src="renders/s4.png">
+  <div class="kicker" style="left:120px;top:100px">03 · Контекст</div>
+  <h2 class="title" style="left:116px;top:150px">Общеевропейское явление</h2>
+  <div class="note" style="left:1290px;top:150px;--r:3deg">тренд сезона XIII–XVI:<br>у каждого короля — свой парламент</div>
   <div class="labels"></div>
 </section>
 
 <!-- 5 -->
-<section class="slide" id="s5">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:110px">04 · Россия</div>
-  <h2 class="title" style="left:116px;top:170px">Земский собор</h2>
-  <p class="lead" style="left:120px;top:330px;width:820px">Собрание «всей земли» при царе. Три опоры, на&nbsp;которых держалась власть государя:</p>
-  <ol class="pillars" style="left:120px;top:490px;width:860px">
-    <li><i>I</i><div><b>Боярская дума</b><span>высшая аристократия, постоянный совет при царе</span></div></li>
-    <li><i>II</i><div><b>Освящённый собор</b><span>патриарх (митрополит) и&nbsp;высшее духовенство</span></div></li>
-    <li><i>III</i><div><b>Выборные «от земли»</b><span>дворяне и&nbsp;посадские люди; в&nbsp;1613&nbsp;году&nbsp;— также казаки и&nbsp;черносошные крестьяне</span></div></li>
-  </ol>
+<section class="slide top" id="s5">
+  <img class="bg" src="renders/s5.png">
+  <div class="kicker" style="left:120px;top:76px">04 · Россия</div>
+  <h2 class="title" style="left:116px;top:120px;font-size:80px">Земский собор</h2>
   <div class="labels"></div>
+  <div class="chat" style="left:1200px;top:150px">
+    <header><span class="ava">ЗС</span><div><b>Земский собор</b><small>бояре, духовенство, выборные · 1&nbsp;админ</small></div></header>
+    <p class="sys">Царь создал группу «Земский собор» · 1549</p>
+    <p class="me"><span>Нужны деньги на войну. Что думает земля?</span></p>
+    <p><b style="color:#f0c36d">Боярская дума</b><span>Приговорили: воевать.</span></p>
+    <p><b style="color:#9fd0ff">Освящённый собор</b><span>Благословляем.</span></p>
+    <p><b style="color:#b9f0a5">Посадские люди</b><span>А можно не с нас?</span></p>
+    <p class="me"><span>Спасибо, единогласно!</span></p>
+    <p class="sys">Царь удалил группу · 1653</p>
+  </div>
+  <p class="cap" style="left:1200px;top:905px;width:600px">Соборы советовали и&nbsp;одобряли&nbsp;— последнее слово оставалось за&nbsp;царём.</p>
 </section>
 
 <!-- 6 -->
-<section class="slide" id="s6">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:90px">05 · Хронология</div>
-  <h2 class="title" style="left:116px;top:145px">Взлёт и угасание соборов</h2>
+<section class="slide top" id="s6">
+  <img class="bg" src="renders/s6.png">
+  <div class="kicker" style="left:120px;top:84px">05 · Хронология</div>
+  <h2 class="title" style="left:116px;top:130px;font-size:70px">Взлёт и&nbsp;угасание</h2>
   <div class="labels"></div>
 </section>
 
 <!-- 7 -->
-<section class="slide" id="s7">
-  <canvas class="gl"></canvas>
+<section class="slide left" id="s7">
+  <img class="bg" src="renders/s7.png">
   <div class="kicker" style="left:120px;top:110px">06 · Главный вопрос</div>
-  <h2 class="hero small" style="left:112px;top:230px">Почему она<br><em>не закрепилась?</em></h2>
-  <p class="quote sm" style="left:120px;top:640px;width:900px">Собор был опорой царя&nbsp;— но&nbsp;так и&nbsp;не&nbsp;стал противовесом ему. Когда опора стала не&nbsp;нужна, её&nbsp;просто перестали созывать.</p>
+  <h2 class="hero" style="left:114px;top:200px;font-size:112px">Почему она<br><em>не закрепилась?</em></h2>
+  <p class="quote sm" style="left:120px;top:520px;width:840px">Собор был опорой царя&nbsp;— но&nbsp;так и&nbsp;не&nbsp;стал противовесом. Когда опора стала не&nbsp;нужна, её перестали созывать.</p>
+  <div class="note" style="left:1010px;top:150px;--r:-4deg;width:330px">нельзя просто так взять<br>и&nbsp;ограничить самодержавие<svg class="arr" style="left:250px;top:92px;transform:rotate(18deg)"><use href="#arr"/></svg></div>
 </section>
 
 <!-- 8 -->
-<section class="slide" id="s8">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:90px">07 · Причины</div>
-  <h2 class="title" style="left:116px;top:145px">Шесть причин</h2>
-  <div class="cards6">
-    <div class="card" style="--ry:9deg"><i>01</i><h3>Нет закона о&nbsp;соборах</h3><p>Ни сроки созыва, ни состав, ни полномочия не&nbsp;закреплены. Собирает царь&nbsp;— когда сочтёт нужным.</p></div>
-    <div class="card" style="--ry:0deg"><i>02</i><h3>Совет, а&nbsp;не&nbsp;власть</h3><p>Соборы советовали и&nbsp;одобряли, но&nbsp;не&nbsp;могли обязать государя и&nbsp;не&nbsp;контролировали казну.</p></div>
-    <div class="card" style="--ry:-9deg"><i>03</i><h3>Слабые города</h3><p>Посады немногочисленны, бедны и&nbsp;зависимы от&nbsp;государства. Сильного «третьего сословия» не&nbsp;возникло.</p></div>
-    <div class="card" style="--ry:9deg"><i>04</i><h3>Зависимое дворянство</h3><p>Землю дают за&nbsp;службу царю. Получив в&nbsp;1649&nbsp;году крепостное право, дворяне потеряли интерес к&nbsp;соборам.</p></div>
-    <div class="card" style="--ry:0deg"><i>05</i><h3>Окрепшее самодержавие</h3><p>После Смуты династия утвердилась. Приказы, чиновники и&nbsp;полки нового строя заменили «совет всей земли».</p></div>
-    <div class="card" style="--ry:-9deg"><i>06</i><h3>Иная традиция власти</h3><p>Царь&nbsp;— помазанник Божий и&nbsp;хозяин земли. Договора власти с&nbsp;сословиями, подобного Великой хартии, не&nbsp;было.</p></div>
+<section class="slide dim" id="s8">
+  <img class="bg blur" src="renders/s7.png">
+  <div class="kicker" style="left:120px;top:84px">07 · Причины</div>
+  <h2 class="title" style="left:116px;top:130px">Шесть причин</h2>
+  <div class="grid g6">
+    <div class="card"><i>01</i><h3>Нет закона о&nbsp;соборах</h3><p>Ни сроки созыва, ни состав, ни полномочия не&nbsp;закреплены. Собирает царь&nbsp;— когда сочтёт нужным.</p><u>«Регламент? Не, не слышали»</u></div>
+    <div class="card"><i>02</i><h3>Совет, а&nbsp;не&nbsp;власть</h3><p>Соборы советовали и&nbsp;одобряли, но&nbsp;не&nbsp;могли обязать государя и&nbsp;не&nbsp;контролировали казну.</p><u>«Мы посовещались, и царь решил»</u></div>
+    <div class="card"><i>03</i><h3>Слабые города</h3><p>Посады малочисленны, бедны и&nbsp;зависимы от&nbsp;государства. Сильного «третьего сословия» не&nbsp;возникло.</p><u>третье сословие: 404 not found</u></div>
+    <div class="card"><i>04</i><h3>Зависимое дворянство</h3><p>Землю дают за&nbsp;службу царю. Получив в&nbsp;1649&nbsp;году крепостное право, дворяне потеряли интерес к&nbsp;соборам.</p><u>«Всем спасибо, расходимся»</u></div>
+    <div class="card"><i>05</i><h3>Окрепшее самодержавие</h3><p>После Смуты династия утвердилась. Приказы, чиновники и&nbsp;полки нового строя заменили «совет всей земли».</p><u>царь наконец-то настоящий</u></div>
+    <div class="card"><i>06</i><h3>Иная традиция власти</h3><p>Царь&nbsp;— помазанник Божий и&nbsp;хозяин земли. Договора власти с&nbsp;сословиями, как Великая хартия, не&nbsp;было.</p><u>«Хартия вольностей? Это другое»</u></div>
   </div>
 </section>
 
 <!-- 9 -->
-<section class="slide" id="s9">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:90px">08 · Сравнение</div>
-  <h2 class="title" style="left:116px;top:145px">Два пути одной идеи</h2>
+<section class="slide dim" id="s9">
+  <img class="bg blur" src="renders/s2.png">
+  <div class="kicker" style="left:120px;top:84px">08 · Сравнение</div>
+  <h2 class="title" style="left:116px;top:130px">Два пути одной идеи</h2>
   <div class="versus">
-    <div class="panel" style="--ry:7deg">
-      <h3>Англия <small>парламент</small></h3>
+    <div class="panel">
+      <img class="cut" src="renders/cut_marble.png">
+      <h3>Англия<small>парламент</small></h3>
       <p>Созывается регулярно, по&nbsp;обычаю и&nbsp;закону</p>
-      <p>Без согласия парламента налог ввести нельзя</p>
+      <p>Без согласия парламента налог не&nbsp;ввести</p>
       <p>Сильные города и&nbsp;джентри с&nbsp;общими интересами</p>
       <p>Договор: Великая хартия вольностей, 1215</p>
-      <p class="res">Парламент ограничил власть короля</p>
+      <p class="res">Парламент ограничил короля</p>
     </div>
-    <div class="mid"><span></span><b>Созыв</b><b>Налоги</b><b>Сословия</b><b>Основа</b><b class="res">Итог</b></div>
-    <div class="panel ru" style="--ry:-7deg">
-      <h3>Россия <small>земский собор</small></h3>
+    <div class="mid"><b>Созыв</b><b>Налоги</b><b>Сословия</b><b>Основа</b><b>Итог</b></div>
+    <div class="panel ru">
+      <img class="cut" src="renders/cut_gold.png">
+      <h3>Россия<small>земский собор</small></h3>
       <p>Созывается по&nbsp;воле царя, без твёрдых правил</p>
-      <p>Собор лишь поддерживает решения о&nbsp;сборах</p>
+      <p>Собор лишь одобряет решения о&nbsp;сборах</p>
       <p>Слабые посады и&nbsp;служилое дворянство</p>
       <p>Служба и&nbsp;верность государю</p>
-      <p class="res">Соборы исчезли, утвердился абсолютизм</p>
+      <p class="res">Соборы исчезли, пришёл абсолютизм</p>
     </div>
   </div>
+  <div class="note" style="left:470px;top:262px;--r:-5deg">ожидание</div>
+  <div class="note" style="left:1370px;top:262px;--r:4deg">реальность</div>
 </section>
 
 <!-- 10 -->
-<section class="slide" id="s10">
-  <canvas class="gl"></canvas>
-  <div class="kicker" style="left:120px;top:110px">09 · Итог</div>
-  <h2 class="hero small" style="left:112px;top:190px">Не ступень<br>к парламенту,<br>а&nbsp;<em>мост к&nbsp;абсолютизму</em></h2>
-  <p class="lead" style="left:120px;top:620px;width:960px">Земские соборы помогли государству пережить реформы и&nbsp;Смуту, но&nbsp;не&nbsp;получили собственных прав&nbsp;— и&nbsp;ушли, когда царская власть окрепла.</p>
-  <div class="chain" style="left:120px;top:850px">
+<section class="slide dim" id="s10">
+  <img class="bg blur" src="renders/s1.png">
+  <div class="kicker" style="left:120px;top:84px">09 · Коротко</div>
+  <h2 class="title" style="left:116px;top:130px">Ответ за 20 секунд</h2>
+  <div class="answer">
+    <div class="card"><h4>Что это</h4><p class="big">Монархия, в&nbsp;которой государь правит, опираясь на&nbsp;собрание сословий.</p><p>В России&nbsp;— Земские соборы, <b>1549–1653</b>.</p></div>
+    <div class="card"><h4>Почему не закрепилась</h4>
+      <ol><li><i>1</i>У соборов не&nbsp;было прав, закреплённых законом: их&nbsp;созывал и&nbsp;распускал царь.</li>
+      <li><i>2</i>Сословия были слабы и&nbsp;зависели от&nbsp;государства: мало городов, служилое дворянство.</li>
+      <li><i>3</i>После Смуты самодержавие окрепло и&nbsp;перестало нуждаться в&nbsp;поддержке «земли».</li></ol></div>
+  </div>
+  <div class="note" style="left:1290px;top:150px;--r:3deg">если спросят на экзамене —<br>говорить вот это</div>
+</section>
+
+<!-- 11 -->
+<section class="slide left" id="s11">
+  <img class="bg" src="renders/s10.png">
+  <div class="kicker" style="left:120px;top:100px">10 · Итог</div>
+  <h2 class="hero" style="left:114px;top:170px;font-size:104px">Не ступень<br>к&nbsp;парламенту,<br>а&nbsp;<em>мост к&nbsp;абсолютизму</em></h2>
+  <p class="lead" style="left:120px;top:575px;width:880px;font-size:29px">Земские соборы помогли государству пережить реформы и&nbsp;Смуту, но&nbsp;не&nbsp;получили собственных прав&nbsp;— и&nbsp;ушли, когда царская власть окрепла.</p>
+  <div class="chain" style="left:120px;top:735px">
     <div><b>1549</b><span>первый Земский собор</span></div>
     <div><b>1653</b><span>последний собор полного состава</span></div>
     <div><b>1682</b><span>отмена местничества</span></div>
     <div><b>1721</b><span>Российская империя</span></div>
   </div>
+  <div class="note" style="left:1560px;top:120px;--r:5deg">шах и мат,<br>сословия</div>
+  <div class="note" style="left:150px;top:925px;--r:-4deg;font-size:34px">Земский собор, 1549–1653. Press F<svg class="arr" style="left:400px;top:-4px;width:90px;transform:rotate(-8deg)"><use href="#arr"/></svg></div>
 </section>
 
-<script type="module" src="scene.js"></script>
+<script>
+const EU = [['1188','Кортесы','Леон и Кастилия'],['1265','Парламент','Англия'],['1302','Генеральные штаты','Франция'],['1493','Вальный сейм','Польша'],['1549','Земский собор','Россия']];
+const TL = [['1549','Первый собор','Иван IV начинает реформы'],['1566','Ливонская война','Собор решает: продолжать'],['1598','Борис Годунов','Собор избирает царя'],['1613','Михаил Романов','Избрание новой династии — пик влияния'],['1649','Соборное уложение','Свод законов страны'],['1653','Последний собор','Войско Запорожское принято в подданство'],['далее','Угасание','Лишь совещания с отдельными сословиями']];
+const put = (id, [x, y], cls, html, dx = 0, dy = 0) => { const e = document.createElement('div'); e.className = cls; e.innerHTML = html; e.style.left = (x + dx) + 'px'; e.style.top = (y + dy) + 'px'; document.querySelector(`#${id} .labels`).appendChild(e); };
+(async () => {
+  const L = await (await fetch('renders/labels.json')).json();
+  L.s4.forEach((p, i) => { put('s4', p.top, 'lab year' + (i === 4 ? ' hot' : ''), EU[i][0], 0, -14); put('s4', p.base, 'lab txt big', `<b>${EU[i][1]}</b>${EU[i][2]}`, 0, 26); });
+  L.s6.forEach((p, i) => { put('s6', p.top, 'lab year' + (i === 3 ? ' hot' : ''), TL[i][0], 0, -12); put('s6', p.base, 'lab txt', `<b>${TL[i][1]}</b>${TL[i][2]}`, 0, 30); });
+  put('s6', L.s6[3].top, 'note', '«Миша, ты царь!»', 70, -40);
+  put('s6', L.s6[6].top, 'note', 'собор вышел<br>из чата', -95, -160);
+  const s5 = L.s5;
+  put('s5', s5.tsar, 'lab tag', 'Царь', 0, -10);
+  put('s5', s5.duma, 'lab txt big', '<b>Боярская дума</b>высшая аристократия', 0, 20);
+  put('s5', s5.sobor, 'lab txt big', '<b>Освящённый собор</b>высшее духовенство', 0, 20);
+  put('s5', s5.zem, 'lab txt big', '<b>Выборные «от земли»</b>дворяне и посадские люди', 0, 20);
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
+  document.body.dataset.ready = '1';
+})();
+</script>
 </body>
 </html>
