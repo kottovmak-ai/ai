@@ -11,7 +11,7 @@ LABELS = {}
 
 
 def begin():
-    sc = L.reset(samples=40 if PREVIEW else 96, w=800 if PREVIEW else 1920, h=450 if PREVIEW else 1080)
+    sc = L.reset(samples=40 if PREVIEW else 56, w=800 if PREVIEW else 1920, h=450 if PREVIEW else 1080)
     M = L.mats(); L.cap_gold(M)
     return sc, M
 

@@ -35,7 +35,7 @@
   <img class="bg" src="renders/s2.png">
   <div class="kicker" style="left:120px;top:100px">01 · Понятие</div>
   <h2 class="title" style="left:116px;top:150px">Что это такое</h2>
-  <p class="quote" style="left:120px;top:300px;width:900px">Форма правления, при которой монарх правит, опираясь на&nbsp;<em>собрание представителей сословий</em>.</p>
+  <p class="quote" style="left:120px;top:290px;width:760px;font-size:48px">Форма правления, при которой монарх правит, опираясь на&nbsp;<em>собрание представителей сословий</em>.</p>
   <ul class="facts" style="left:120px;top:640px;width:470px">
     <li><b>Монарх</b>глава государства, созывает собрание</li>
     <li><b>Сословия</b>духовенство, знать, служилые люди, горожане</li>
@@ -55,7 +55,7 @@
     <div class="card"><i>03</i><h3>Главные вопросы</h3><p>Налоги, война и&nbsp;мир, законы, избрание или утверждение монарха.</p></div>
     <div class="card"><i>04</i><h3>Переходный этап</h3><p>Между раздробленностью и&nbsp;абсолютизмом: монарху ещё нужна поддержка «всей земли».</p></div>
   </div>
-  <div class="note" style="left:1325px;top:300px;--r:-4deg;width:300px">«Мне нужен<br>ваш совет»<small>= мне нужны ваши налоги</small></div>
+  <div class="note" style="left:960px;top:96px;--r:-4deg;width:300px">«Мне нужен<br>ваш совет»<small>= мне нужны ваши налоги</small></div>
 </section>
 
 <!-- 4 -->
@@ -63,7 +63,7 @@
   <img class="bg" src="renders/s4.png">
   <div class="kicker" style="left:120px;top:100px">03 · Контекст</div>
   <h2 class="title" style="left:116px;top:150px">Общеевропейское явление</h2>
-  <div class="note" style="left:1290px;top:150px;--r:3deg">тренд сезона XIII–XVI:<br>у каждого короля — свой парламент</div>
+  <div class="note" style="left:130px;top:272px;--r:-2deg">тренд сезона XIII–XVI: у каждого короля — свой парламент</div>
   <div class="labels"></div>
 </section>
 
@@ -100,7 +100,7 @@
   <div class="kicker" style="left:120px;top:110px">06 · Главный вопрос</div>
   <h2 class="hero" style="left:114px;top:200px;font-size:112px">Почему она<br><em>не закрепилась?</em></h2>
   <p class="quote sm" style="left:120px;top:520px;width:840px">Собор был опорой царя&nbsp;— но&nbsp;так и&nbsp;не&nbsp;стал противовесом. Когда опора стала не&nbsp;нужна, её перестали созывать.</p>
-  <div class="note" style="left:1010px;top:150px;--r:-4deg;width:330px">нельзя просто так взять<br>и&nbsp;ограничить самодержавие<svg class="arr" style="left:250px;top:92px;transform:rotate(18deg)"><use href="#arr"/></svg></div>
+  <div class="note" style="left:1440px;top:250px;--r:4deg;width:330px">нельзя просто так взять<br>и&nbsp;ограничить<br>самодержавие<svg class="arr" style="left:-125px;top:40px;transform:scaleX(-1) rotate(-10deg)"><use href="#arr"/></svg></div>
 </section>
 
 <!-- 8 -->
@@ -182,18 +182,18 @@
 <script>
 const EU = [['1188','Кортесы','Леон и Кастилия'],['1265','Парламент','Англия'],['1302','Генеральные штаты','Франция'],['1493','Вальный сейм','Польша'],['1549','Земский собор','Россия']];
 const TL = [['1549','Первый собор','Иван IV начинает реформы'],['1566','Ливонская война','Собор решает: продолжать'],['1598','Борис Годунов','Собор избирает царя'],['1613','Михаил Романов','Избрание новой династии — пик влияния'],['1649','Соборное уложение','Свод законов страны'],['1653','Последний собор','Войско Запорожское принято в подданство'],['далее','Угасание','Лишь совещания с отдельными сословиями']];
-const put = (id, [x, y], cls, html, dx = 0, dy = 0) => { const e = document.createElement('div'); e.className = cls; e.innerHTML = html; e.style.left = (x + dx) + 'px'; e.style.top = (y + dy) + 'px'; document.querySelector(`#${id} .labels`).appendChild(e); };
+const put = (id, [x, y], cls, html, dx = 0, dy = 0) => { x = Math.min(1775, Math.max(150, x)); const e = document.createElement('div'); e.className = cls; e.innerHTML = html; e.style.left = (x + dx) + 'px'; e.style.top = (y + dy) + 'px'; document.querySelector(`#${id} .labels`).appendChild(e); };
 (async () => {
   const L = await (await fetch('renders/labels.json')).json();
-  L.s4.forEach((p, i) => { put('s4', p.top, 'lab year' + (i === 4 ? ' hot' : ''), EU[i][0], 0, -14); put('s4', p.base, 'lab txt big', `<b>${EU[i][1]}</b>${EU[i][2]}`, 0, 26); });
-  L.s6.forEach((p, i) => { put('s6', p.top, 'lab year' + (i === 3 ? ' hot' : ''), TL[i][0], 0, -12); put('s6', p.base, 'lab txt', `<b>${TL[i][1]}</b>${TL[i][2]}`, 0, 30); });
+  L.s4.forEach((p, i) => { put('s4', p.top, 'lab year' + (i === 4 ? ' hot' : ''), EU[i][0], 0, -14); put('s4', p.base, 'lab txt big', `<b>${EU[i][1]}</b>${EU[i][2]}`, 0, 0); });
+  L.s6.forEach((p, i) => { put('s6', p.top, 'lab year' + (i === 3 ? ' hot' : ''), TL[i][0], 0, -30); put('s6', p.base, 'lab txt', `<b>${TL[i][1]}</b>${TL[i][2]}`, 0, 6); });
   put('s6', L.s6[3].top, 'note', '«Миша, ты царь!»', 70, -40);
   put('s6', L.s6[6].top, 'note', 'собор вышел<br>из чата', -95, -160);
   const s5 = L.s5;
-  put('s5', s5.tsar, 'lab tag', 'Царь', 0, -10);
-  put('s5', s5.duma, 'lab txt big', '<b>Боярская дума</b>высшая аристократия', 0, 20);
-  put('s5', s5.sobor, 'lab txt big', '<b>Освящённый собор</b>высшее духовенство', 0, 20);
-  put('s5', s5.zem, 'lab txt big', '<b>Выборные «от земли»</b>дворяне и посадские люди', 0, 20);
+  put('s5', s5.tsar, 'lab tag', 'Царь', 120, 130);
+  put('s5', s5.duma, 'lab txt big', '<b>Боярская дума</b>высшая аристократия', 30, -40);
+  put('s5', s5.sobor, 'lab txt big', '<b>Освящённый собор</b>высшее духовенство', 0, -40);
+  put('s5', s5.zem, 'lab txt big', '<b>Выборные «от земли»</b>дворяне и посадские люди', -170, -60);
   await document.fonts.ready;
   await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
   document.body.dataset.ready = '1';

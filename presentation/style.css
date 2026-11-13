@@ -13,7 +13,7 @@ body{background:#000;font-family:var(--sans);color:var(--ivory);counter-reset:sl
 .slide.dim::before{background:radial-gradient(1200px 800px at 80% 20%,rgba(150,20,45,.25),transparent 70%),rgba(7,3,9,.45)}
 .slide::after{content:"Сословно-представительная монархия  ·  " counter(sl,decimal-leading-zero) " / 11";
   position:absolute;right:120px;bottom:44px;z-index:6;font:400 12px var(--disp);letter-spacing:.24em;text-transform:uppercase;color:rgba(226,182,95,.65)}
-#s1::after{content:""}
+#s1::after,#s4::after,#s5::after,#s6::after{content:""}
 .slide>*:not(.bg){position:absolute;z-index:3}
 
 .kicker{font:400 15px var(--disp);letter-spacing:.34em;text-transform:uppercase;color:var(--gold);padding-left:86px;white-space:nowrap}
@@ -45,8 +45,9 @@ em{font-style:italic;background:linear-gradient(100deg,#fbe9b4 0%,#e2b65f 50%,#a
 .card p{font:400 24px/1.42 var(--sans);color:#ddd1be}
 .card u{display:block;text-decoration:none;font:700 31px/1 var(--note);color:var(--hand);margin-top:14px;transform:rotate(-1.5deg);transform-origin:left}
 .grid{display:grid}
-.g4{left:120px;top:300px;width:1160px;grid-template-columns:1fr 1fr;gap:30px}
-.g4 .card{padding:34px 38px 36px;height:318px}
+.g4{left:120px;top:300px;width:1090px;grid-template-columns:1fr 1fr;gap:30px}
+.g4 .card{padding:32px 34px 34px;height:330px}
+.g4 .card h3{font-size:37px}
 .g6{left:120px;top:270px;width:1680px;grid-template-columns:repeat(3,1fr);gap:30px}
 .g6 .card{padding:28px 34px 26px;height:338px}
 .g6 .card h3{font-size:36px;margin:10px 0 12px}
@@ -56,10 +57,10 @@ em{font-style:italic;background:linear-gradient(100deg,#fbe9b4 0%,#e2b65f 50%,#a
 .lab{position:absolute;transform:translate(-50%,0);text-align:center;white-space:nowrap}
 .lab.year{font:700 34px var(--disp);color:var(--ivory);transform:translate(-50%,-100%);text-shadow:0 4px 18px rgba(0,0,0,.9)}
 .lab.year.hot{color:var(--gold-hi);font-size:42px}
-.lab.txt{white-space:normal;width:232px;font:400 19px/1.34 var(--sans);color:#ddd1be;text-shadow:0 2px 12px #000}
+.lab.txt{white-space:normal;width:226px;font:400 19px/1.34 var(--sans);color:#ddd1be;text-shadow:0 2px 12px #000}
 .lab.txt b{display:block;font:800 27px/1.08 var(--serif);color:#fff7e8;margin-bottom:7px}
-.lab.big{width:330px;font-size:22px}
-.lab.big b{font-size:34px}
+.lab.big{width:300px;font-size:21px}
+.lab.big b{font-size:31px}
 .lab.tag{font:400 16px var(--disp);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);transform:translate(-50%,-100%)}
 .labels .note{position:absolute}
 
@@ -91,12 +92,12 @@ em{font-style:italic;background:linear-gradient(100deg,#fbe9b4 0%,#e2b65f 50%,#a
 
 /* answer */
 .answer{left:120px;top:300px;width:1680px;display:grid;grid-template-columns:640px 1fr;gap:34px}
-.answer .card{padding:40px 46px;height:620px}
+.answer .card{padding:44px 48px;height:560px}
 .answer h4{font:400 16px var(--disp);letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
-.answer .big{font:800 46px/1.16 var(--serif);color:#fff7e8;margin-bottom:28px}
+.answer .big{font:800 50px/1.16 var(--serif);color:#fff7e8;margin-bottom:28px}
 .answer p{font-size:28px}.answer p b{color:var(--gold-hi)}
 .answer ol{list-style:none;display:flex;flex-direction:column;gap:30px}
-.answer li{display:flex;gap:30px;align-items:flex-start;font:500 30px/1.36 var(--sans);color:#ece2d0}
+.answer li{display:flex;gap:30px;align-items:flex-start;font:500 32px/1.36 var(--sans);color:#ece2d0}
 .answer li i{font:800 italic 76px/.9 var(--serif);color:var(--gold);width:56px;flex:none}
 
 .chain{display:flex}
